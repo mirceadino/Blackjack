@@ -6,4 +6,4 @@ Disclaimer: I don't know the full rules for Blackjack, I did a simplified varian
 
 ## Screenshot
 
-<img src="http://i63.tinypic.com/jpewpi.jpg"/>
+<img src="http://i67.tinypic.com/dggxuo.jpg"/>

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+
+{% block title_scoreboard %}
+    Blackjack ({{ score }})
+{% endblock %}
+
+
+{% block content_scoreboard %}
+    Blackjack ({{ score }})
+{% endblock %}
+
+
+{% block rules %}
+    <h5>How To Play</h5>
+    Beat the dealer by getting a higher score than him, without exceeding 21. <br/><br/>
+
+    <strong>Hit</strong> to draw a card for yourself. <br/>
+    <strong>Stand</strong> to stop drawing cards.<br/>
+    <strong>Reveal</strong> to see dealer's next move.<br/>
+    <strong>Reset</strong> to start a new game <br/> (if previous game didn't finish, it's counted as a loss).<br/><br/>
+
+    <strong>2 - 10</strong>: 2 - 10 <br/>
+    <strong>J, Q, K</strong>: 10 <br/>
+    <strong>A</strong>: 1 or 11 <br/><br/>
+
+    <strong>Good luck!</strong>
+{% endblock %}
+
+
+{% block feed %}
+    <h5>Feed</h5>
+    <b>{{ feed }}</b>
+{% endblock %}
+
+
+{% block player %}
+    <h5>Your Cards:</h5>
+    {{ player_hand }}
+{% endblock %}
+
+
+{% block dealer %}
+    <h5>Dealer's Cards:</h5>
+    {{ dealer_hand }}
+{% endblock %}
+
+
+{% block menu %}
+    <a href="/__hit" id="hit">Hit</a>
+    |
+    <a href="/__stand" id="stand">Stand</a>
+    |
+    <a href="/__reveal" id="reveal">Reveal</a>
+    |
+    <a href="/__reset" id="reset">Reset</a>
+{% endblock %}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>
+      {% block title_scoreboard %}
+      Blackjack
+      {% endblock %}
+  </title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./static/css/normalize.css">
+  <link rel="stylesheet" href="./static/css/skeleton.css">
+  <link rel="stylesheet" href="./static/css/responsive.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="./static/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="text-align:center;">
+    <div name="header" class="row">
+      <div class="twelve columns" style="padding: 1%">
+          <h2>
+              {% block content_scoreboard %}
+              Blackjack
+              {% endblock %}
+          </h2>
+      </div>
+    </div>
+    
+    <div name="content" class="row" id="main">
+
+      <div name="rules" class="three columns" style="padding: 1%">
+        {% block rules %}
+        Here come the rules.
+        {% endblock %}
+      </div>
+
+      <div name="game" class="six columns" style="padding: 1%;">
+        <div name="player" class="row">
+          <div name="player" class="twelve columns">
+            {% block player %}
+            Here come player's cards.
+            {% endblock %}
+         </div>
+        </div>
+
+        <div name="menu" class="row">
+          <div name="menu" class="twelve columns">
+            {% block menu %}
+            Here comes the menu.
+            {% endblock %}
+          </div>
+        </div>
+
+        <br/><br/>
+
+        <div name="dealer" class="row">
+          <div name="dealer" class="twelve columns">
+            {% block dealer %}
+            Here come dealer's cards.
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+
+      <div name="feed" class="three columns" style="padding: 1%;">
+        {% block feed %}
+        Here comes the feed.
+        {% endblock %}
+      </div>
+
+    </div>
+
+    <div name="footer" class="row">
+      <div class="twelve columns" style="padding: 1%">
+        {% block footer %}
+
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
